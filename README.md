@@ -8,8 +8,8 @@ MOHAN Foundation is a registered non-profit charitable trust and the Registratio
 
 ### Prerequisites
 
-* Make sure you are running on the latest .NET Core SDK (SDK 3.1 and above only). Get the latest one here.
-* Visual Studio 2019 ( You can check out my Installation Guide of Visual Studio 2019 Community which is completely Free to use.) Make sure that ASP.NET and web development workload is installed.
+* Make sure you are running on the latest .NET Core SDK (SDK 3.1 and above only). Get the latest one [here](https://dotnet.microsoft.com/download/visual-studio-sdks).
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) ( You can check out my Installation Guide of Visual Studio 2019 Community which is completely Free to use.) Make sure that ASP.NET and web development workload is installed.
 * Install the latest DOTNET & EF CLI Tools by using this command – dotnet tool install –global dotnet-ef 
 
 ### Contributions
