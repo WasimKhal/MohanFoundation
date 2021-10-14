@@ -23,7 +23,10 @@ namespace MohanFoundation.Controllers
             ViewData["Title"] = "Mohan Foundation - Organ Donation in India";
             return View();
         }
-
+        /// <summary>
+        /// Privacy!
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Privacy()
         {
             return View();
