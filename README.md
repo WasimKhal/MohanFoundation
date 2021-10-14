@@ -16,5 +16,8 @@ MOHAN Foundation is a registered non-profit charitable trust and the Registratio
 - Someone update the proper README.MD
 - Ensure the code quality.
 
-### Authors
+### Initial Authors
 Abdul Wahab Mohamed
+
+### Contributors
+Aspire Volunteers
