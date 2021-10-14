@@ -1,4 +1,19 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
+﻿$(document).ready(function () {
+    $("#myCarousel").carousel({
+        interval: 8000,
+    });
+    $(function () {
+        if ($(window).width() > 960) {
+            //$('.dropdown').hover(function() {
+            //			 $(this).toggleClass('open');
+            //		});
+            $(".dropdown").mouseenter(function () {
+                $(this).addClass("open");
+            });
+            $(".dropdown").mouseleave(function () {
+                $(this).removeClass("open");
+            });
+        } else {
+        }
+    });
+});

@@ -1,47 +1,1366 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"]</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="./css/site.css">
+    <title>Document</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">  <img src="~/images/mohan-foundation-icon-ver2.png" /></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+        <div class="header">
+            <div class="header_navTop  mob-view">
+                <div class="container">
+                    <div class="row nogutters">
+                        <div class="col-md-6 col-sm-12">
+                            <ul class="list-unstyled d-flex align-items-center mb-0">
+                                <li>
+                                    <a itemprop="url" target="_blank" href="#" title="">
+                                        <i class="fab fa-facebook-f header_mediaIcon"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a itemprop="url" target="_blank" href="#" title="">
+                                        <i class="fab fa-twitter header_mediaIcon"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a itemprop="url" target="_blank" href="#" title="">
+                                        <i class="fab fa-youtube header_mediaIcon"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a itemprop="url" target="_blank" href="#" title="">
+                                        <i class="fab fa-instagram header_mediaIcon"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a itemprop="url" target="_blank" href="#" title="">
+                                        <i class="fab fa-linkedin header_mediaIcon"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a style="color:#22235B;font-size:14px;" target="_blank" href="#">
+                                        Global
+                                        Giving US Nationals
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="">
+                                        <span class="dropdown link-box1">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                                               style="color:#22235B; padding-left:10px;  font-size:14px;"
+                                               aria-expanded="false">Explore</a>
+                                            <ul class="dropdown-menu header_topMenu" role="menu">
+                                                <li>
+                                                    <a href="#">
+                                                        Indian
+                                                        Transplant Newsletter
+                                                    </a>
+                                                </li>
+                                                <li><a href="#">FAQ's</a></li>
+                                                <li>
+                                                    <a href="#">
+                                                        Request
+                                                        To Use MF Content
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Membership
+                                                        Benefits
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Feedback</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Enquiry</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Sitemap</a>
+                                                </li>
+                                            </ul>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="user-infoWrapper">
+                                <ul class="list-unstyled d-flex align-items-center justify-content-md-end justify-content-sm-start mb-0">
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Registration</a></li>
+                                    <li><a href="#">Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
+            <div class="header_navMiddle py-3  mob-view">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-md-3 col-sm-12">
+                            <a href="#">
+                                <img src="https://www.mohanfoundation.org/images/mohan-foundation-icon-ver2.png"
+                                     title="MOHAN Foundation" alt="MOHAN Foundation">
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <a href="#">
+                                <div class="organ_helpline d-flex align-items-center flex-column">
+                                    <p class="m-0 mb-2">Organ Donation Helpline (Toll Free)</p>
+                                    <p class="m-0 d-flex align-items-center">
+                                        <img src="https://www.mohanfoundation.org/images/phone_icon.png"><span class="phone_no">
+                                            1800
+                                            103 7100
+                                        </span>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-5 col-sm-12">
+                            <a href="#" target="_blank" class="btn btn-info p-2">
+                                HINDI
+                                SITE
+                            </a>
+                            <a href="#" class=" btn btn-success p-2">
+                                PLEDGE
+                                ORGANS
+                            </a>
+                            <a href="#" class="btn btn-danger p-2">
+                                DONATE
+                                FUNDS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color:#fff;" class="container mob-view-header">
+                <div class="row ">
+                    <div class="col-sm-3">
+                        <div>
+                            <a href="#">
+                                <img class="img-responsive"
+                                     src="https://www.mohanfoundation.org/includes-rwd/images/logo-mobile-ver2.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 d-flex justify-content-end">
+                        <ul class="list-unstyled d-flex align-items-center  mob-view-header-icon">
+                            <li><a style="color:#22235B;font-size:14px;" href="#">Contact Us</a></li>
+                            <li>
+                                <a style="color:#22235B;font-size:14px;" href="#">
+                                    <img style="border:1px solid #00CC00;background:#00CC00;border-radius:3px;"
+                                         src="https://www.mohanfoundation.org/includes-rwd/images/registration.png"
+                                         title="Register">
+                                </a>
+                            </li>
+                            <li>
+                                <a style="color:#22235B;font-size:14px;" href="#">
+                                    <img style="border:1px solid #0E3077;background:#0E3077;border-radius:3px;"
+                                         src="https://www.mohanfoundation.org/includes-rwd/images/login.png" title="Login">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="my-2">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <a href="#">
+                            <div class="organ_helpline d-flex align-items-center flex-column">
+                                <p class="m-0 mb-2">Organ Donation Helpline (Toll Free)</p>
+                                <p class="m-0 d-flex align-items-center">
+                                    <img src="https://www.mohanfoundation.org/images/phone_icon.png"><span class="phone_no">
+                                        1800
+                                        103 7100
+                                    </span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-12 col-sm-12 text-center  pledge-btn">
+                        <a href="#" class=" btn btn-success p-2">
+                            PLEDGE
+                            ORGANS
+                        </a>
+                        <a href="#" class="btn btn-danger p-2">
+                            DONATE
+                            FUNDS
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header_mainNav">
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-expand-lg navbar-light ">
+                            <div class="mob-view-header">
+                                <a class="col-md-6 navbar-brand" href="#">
+                                    <img src="https://www.mohanfoundation.org/includes-rwd/images/home.png">
+                                </a>
+                            </div>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="dropdown">
+                                        <a href="#">
+                                            <img class="menu-icon"
+                                                 src="https://www.mohanfoundation.org/images/Home.png" data-pin-nopin="true">HOME
+                                        </a>
+                                    </li>
+                                    <li class="dropdown open">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <img class="menu-icon"
+                                                 src="https://www.mohanfoundation.org/images/AboutUs.png" data-pin-nopin="true">
+                                            ABOUT US<b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu meg-nav-divider1">
+                                            <div class="row flex-wrap">
+                                                <div class="col-sm-4 meg-nav-divider-col">
+                                                    <ul class="list-unstyled">
+                                                        <p style="border-bottom: 2px solid #133785;">
+                                                            <strong>
+                                                                Who We
+                                                                are
+                                                            </strong>
+                                                        </p>
+                                                        <li>
+                                                            <a href="#">
+                                                                Our
+                                                                History
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Vision
+                                                                &amp;
+                                                                Mission
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Trustees
+                                                                &amp; Members
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Advisory
+                                                                Members
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Our
+                                                                Partners
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Our
+                                                                Tax
+                                                                Status
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Annual
+                                                                Reports
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Awards
+                                                                &amp;
+                                                                Accolades
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-4 meg-nav-divider-col">
+                                                    <ul class="list-unstyled">
+                                                        <p style="border-bottom: 2px solid #133785;">
+                                                            <strong>
+                                                                What
+                                                                We
+                                                                do
+                                                            </strong>
+                                                        </p>
+                                                        <li>
+                                                            <a href="#">
+                                                                Anudaan
+                                                                –
+                                                                Making Transplants Affordable
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Research
+                                                                &amp; Publications
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Organ
+                                                                Donation
+                                                                Survey
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Donor
+                                                                Memorial
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Patient
+                                                                Support Group
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Transplant
+                                                                Coordinators’ Training Programme
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Changemakers</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-4 meg-nav-divider-col">
+                                                    <p style="border-bottom: 2px solid #133785;  ">
+                                                        <strong>
+                                                            Transplant
+                                                            Registries
+                                                        </strong>
+                                                    </p>
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#" target="_blank">Kerala</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" target="_blank">Rajasthan</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" target="_blank">
+                                                                Tamil
+                                                                Nadu
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <img class="menu-icon"
+                                                 src="https://www.mohanfoundation.org/images/News&amp;events.png"
+                                                 data-pin-nopin="true"> NEWS &amp; EVENTS<b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu meg-nav-divider2">
+                                            <div class="row flex-wrap">
+                                                <div class="col-sm-5 meg-nav-divider-col ">
+                                                    <p style="border-bottom: 2px solid #133785;  ">
+                                                        <strong>
+                                                            News
+                                                            &amp;
+                                                            Events
+                                                        </strong>
+                                                    </p>
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#">
+                                                                Latest
+                                                                News
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" target="_blank">
+                                                                MOHAN
+                                                                Foundation Blog
+                                                            </a>
+                                                        </li>
+                                                        <li><a href="#" target="_blank">Transplant News Blog</a></li>
+                                                        <li>
+                                                            <a href="#">
+                                                                MOHAN
+                                                                Foundation Press Release
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Press
+                                                                &amp; Media
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Events
+                                                                Calendar
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Commonwealth
+                                                                Event
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-4 meg-nav-divider-col">
+                                                    <p style="border-bottom: 2px solid #133785;  ">
+                                                        <strong>Activities</strong>
+                                                    </p>
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#">
+                                                                Latest
+                                                                Activities
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                TRIOMPH
+                                                                - Patient Support Group
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Synchrony
+                                                                Dialogues
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Bangalore</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Belagavi</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Chennai</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Chandigarh</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Delhi-NCR</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-3 meg-nav-divider-col " style="padding-top:30px;">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#">Hyderabad</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Jaipur</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Kerala</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#r">Manipur</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Mumbai</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Nagpur</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"></a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <img class="menu-icon"
+                                                 src="https://www.mohanfoundation.org/images/Law.png" data-pin-nopin="true">LAW<b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu meg-nav-divider3">
+                                            <div class="row flex-wrap">
+                                                <div class="col-sm-6 meg-nav-divider-col">
+                                                    <ul class="list-unstyled">
+                                                        <p style="border-bottom: 2px solid #133785; ">
+                                                            <strong>
+                                                                Acts,
+                                                                Rules, Bills
+                                                                &amp; GOs
+                                                            </strong>
+                                                        </p>
+                                                        <li>
+                                                            <a href="#">
+                                                                Transplantation
+                                                                of Human Organs Act 1994
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Transplantation
+                                                                of Human Organs Rule 2008
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                THO
+                                                                Amendment Bill 2011
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                THO
+                                                                Amendment Act 2011
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                THO
+                                                                Rules 2014
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                THO
+                                                                FORMS
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Tamil
+                                                                Nadu GO’s
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Kerala
+                                                                GO's
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Maharashtra
+                                                                Government Resolutions
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-6 meg-nav-divider-col">
+                                                    <ul class="list-unstyled">
+                                                        <p style="border-bottom: 2px solid #133785; ">
+                                                            <strong>
+                                                                Orders, Judgements
+                                                                &amp; Forms
+                                                            </strong>
+                                                        </p>
+                                                        <li>
+                                                            <a href="#">
+                                                                Inquest
+                                                                Order
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Brain
+                                                                Stem Death Certification Guidelines - Kerala
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Delhi
+                                                                High Court Judgement on Organ Transplant NOC State
+                                                                Government
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Summary
+                                                                of Delhi High Court Judgement
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Supreme
+                                                                Court Judgement on Euthanasia
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Lok
+                                                                Sabha Discussion on Organ Donation
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Requirements
+                                                                for Approval For Renal Transplantation
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <img class="menu-icon"
+                                                 src="https://www.mohanfoundation.org/images/OpenResource.png"
+                                                 data-pin-nopin="true">OPEN RESOURCES<b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu meg-nav-divider6">
+                                            <div class="row flex-wrap">
+                                                <div class="col-sm-6 meg-nav-divider-col ">
+                                                    <ul class="list-unstyled">
+                                                        <p style="border-bottom: 2px solid #133785; ">
+                                                            <strong>
+                                                                Promotion
+                                                                Material
+                                                            </strong>
+                                                        </p>
+                                                        <li>
+                                                            <a href="#">Articles</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Videos</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Celebrity
+                                                                Endorsements Videos
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Powerpoint
+                                                                Presentations
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Transplant
+                                                                Centres in India
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Life...
+                                                                Pass It On
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Indian
+                                                                Transplant Newsletter
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Brochures</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Meeting/Conference
+                                                                Proceedings
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-6 meg-nav-divider-col">
+                                                    <ul class="list-unstyled">
+                                                        <p style="border-bottom: 2px solid #133785; ">
+                                                            <strong>Galleries</strong>
+                                                        </p>
+                                                        <li>
+                                                            <a href="#">
+                                                                MOHAN
+                                                                Foundation Gallery
+                                                            </a>
+                                                        </li>
+                                                        <p style="border-bottom: 2px solid #133785; padding-top:3px;">
+                                                            <strong>Others</strong>
+                                                        </p>
+                                                        <li>
+                                                            <a href="#">
+                                                                Brain
+                                                                Death
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Body
+                                                                Donation
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Eye
+                                                                Banks
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Skin
+                                                                Banks
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Mobile
+                                                                Apps
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                ISOT
+                                                                Tx guidelines during COVID-19
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <img class="menu-icon"
+                                                 src="https://www.mohanfoundation.org/images/GetInvolved.png"
+                                                 data-pin-nopin="true">GET INVOLVED<b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu meg-nav-divider4">
+                                            <div class="row flex-wrap">
+                                                <div class="col-sm-6 meg-nav-divider-col">
+                                                    <a href="#">
+                                                        <p style="border-bottom: 2px solid #133785; ">
+                                                            <strong>
+                                                                Support Organ
+                                                                Donation
+                                                            </strong>
+                                                        </p>
+                                                    </a>
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#">
+                                                                Organ
+                                                                Donation Ambassador
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Life
+                                                                Membership &amp; Advocacy
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Gift
+                                                                Shop
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Public
+                                                                Advocacy for Organ Donation
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Corporate
+                                                                Advocacy
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Support
+                                                                Us on Social Media
+                                                            </a>
+                                                        </li>
+                                                        <a href="#" target="_blank">
+                                                            <img class="img-fluid"
+                                                                 src="https://www.mohanfoundation.org/includes-rwd/images/global-giving.jpg">
+                                                        </a>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-6 meg-nav-divider-col">
+                                                    <ul class="list-unstyled">
+                                                        <p style="border-bottom: 2px solid #133785;  ">
+                                                            <strong>
+                                                                Help
+                                                                Us Save
+                                                                Lives
+                                                            </strong>
+                                                        </p>
+                                                        <li>
+                                                            <a href="#">Internship</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Volunteering</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Fundraising</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Partnership
+                                                                with Trusts &amp; NGO’s
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Help
+                                                                Us Conduct an Awareness Program
+                                                            </a>
+                                                        </li>
+                                                        <a href="#">
+                                                            <img class="img-fluid"
+                                                                 src="https://www.mohanfoundation.org/includes-rwd/images/tax-benefits.jpg">
+                                                        </a>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <img class="menu-icon"
+                                                 src="https://www.mohanfoundation.org/images/knowledgeCentre.png"
+                                                 data-pin-nopin="true">COURSES<b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu meg-nav-divider5">
+                                            <div class="row flex-wrap">
+                                                <div class="col-sm-6 meg-nav-divider-col ">
+                                                    <ul class="list-unstyled">
+                                                        <p style="border-bottom: 2px solid #133785;  ">
+                                                            <strong>
+                                                                Transplant
+                                                                Coordinators' Training Programme
+                                                            </strong>
+                                                        </p>
+                                                        <li>
+                                                            <a href="#">
+                                                                Course
+                                                                Details
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                One
+                                                                Week Course
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                One
+                                                                Month Course
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Course
+                                                                Structure &amp; Eligibility
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Training
+                                                                Programme Reports
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Testimonials</a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list-unstyled">
+                                                        <p style="border-bottom: 2px solid #133785; ">
+                                                            <strong>
+                                                                Others
+                                                            </strong>
+                                                        </p>
+                                                        <li>
+                                                            <a href="#">
+                                                                Masterclasses
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-sm-6 meg-nav-divider-col">
+                                                    <p></p>
+                                                    <ul class="list-unstyled">
+                                                        <p style="border-bottom: 2px solid #133785; ">
+                                                            <strong>
+                                                                E-Learning Courses
+                                                            </strong>
+                                                        </p>
+                                                        <li>
+                                                            <a href="#">
+                                                                Post
+                                                                Graduate Diploma in Transplant Coordination and
+                                                                Grief
+                                                                Counselling
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Transplant
+                                                                Coordination Professional Certificate
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Gift
+                                                                of Life : One-day certificate course
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Taking
+                                                                Care of Your Kidneys
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Multi-Organ
+                                                                Retrieval Course
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                            <img class="menu-icon" src="https://www.mohanfoundation.org/images/Impact.png"
+                                                 data-pin-nopin="true">IMPACT<b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu meg-nav-divider7">
+                                            <div class="row flex-wrap">
+                                                <div class="col-sm-12 meg-nav-divider-col">
+                                                    <ul class="list-unstyled">
+                                                        <p style="border-bottom: 2px solid #133785; ">
+                                                            <strong>
+                                                                Impact
+                                                                of Our
+                                                                Work
+                                                            </strong>
+                                                        </p>
+                                                        <li>
+                                                            <a href="#">
+                                                                MOHAN
+                                                                Impact - India
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Deceased
+                                                                Organ Donation in India
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Tamil
+                                                                Nadu
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Telangana</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Kerala</a>
+                                                        </li>
+                                                        <li><a href="#">Maharashtra</a></li>
+                                                        <li>
+                                                            <a href="#">Rajasthan</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Delhi/NCR</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">INOS</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - MohanFoundation - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <main class="mb-2">
+        @RenderBody()
+    </main>
+    <footer class="footer">
+        <div class="parallax "></div>
+        <div class="block ">
+            <div class="container">
+                <div class="footer-widgets">
+                    <div class="row justify-content-center">
+                        <div class="col-md-9">
+                            <div class="table-responsive mt-4">
+                                <strong>
+                                    Charity Status: MOHAN Foundation is a
+                                    registered non-profit charitable trust and the Registration No. 285 of
+                                    98 dated 4th August 1997. All contributions are exempt under section
+                                    80-G of the Income Tax Act 1961.
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row  mt-3">
+                        <div class="col-md-3 column">
+                            <div class="widget">
+                                <div class="contact-widget">
+                                    <a href="#">
+                                        <h5>
+                                            Organ Donation Helpline <br><span>
+                                                1800 103 7100 <small style="color:#fff;">
+                                                    (Toll Free)
+                                                </small>
+                                            </span>
+                                        </h5>
+                                    </a>
+                                    <div class="widget-title">
+                                        <h4>Head Office</h4>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-map-marker"></i>3rd Floor, Toshniwal Building, <br> &nbsp;
+                                            &nbsp; &nbsp; 267 Kilpauk Garden Road,Chennai-600 010.
+                                        </li>
+                                        <li><i class="fa fa-phone"></i>+91 44 26447000</li>
+                                        <li><i class="fa fa-envelope"></i>info@mohanfoundation.org</li>
+                                    </ul>
+                                </div>
+                                <div class="widget">
+                                    <div class="widget-title">
+                                        <h4>Transplant Registries</h4>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="#" target="_blank">
+                                                Tamil Nadu Network for Organ
+                                                Sharing
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank">
+                                                Kerala Network for Organ
+                                                Sharing
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank">
+                                                Rajasthan Network for Organ
+                                                Sharing
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="">
+                                    <p class="pad-bot m-0">
+                                        <a style="width:200px; margin: 3px;" class="btn btn-md btn-danger"
+                                           href="https://www.mohanfoundation.org/help.asp">Donate Funds</a>
+                                    </p>
+                                    <p class="pad-bot">
+                                        <a style="width:200px; margin: 3px;" class="btn btn-md btn-primary"
+                                           href="https://www.mohanfoundation.org/survey.asp">Take a Survey</a>
+                                    </p>
+                                    <p class="pad-bot">
+                                        <a style="width:200px; margin: 3px; background-color: green; color:#fff;"
+                                           class="btn btn-md " href="https://www.mohanfoundation.org/donorcard.asp">
+                                            Pledge
+                                            Organs
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 column">
+                            <div class="widget">
+                                <div class="widget-title">
+                                    <h4>Home</h4>
+                                </div>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li>
+                                        <a href="#">Annual Reports</a>
+                                    </li>
+                                    <li><a href="#">Volunteering</a></li>
+                                    <li><a href="#">Internship</a></li>
+                                </ul>
+                            </div>
+                            <div class="widget">
+                                <div class="widget-title">
+                                    <h4>Organ Donors</h4>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Donor
+                                            Memorial
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Life
+                                            Pass It On
+                                        </a>
+                                    </li>
+                                    <li><a href="#">Donor Cards</a></li>
+                                </ul>
+                            </div>
+                            <div class="widget">
+                                <div class="widget-title">
+                                    <h4>Mobile Apps</h4>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Donor
+                                            Optimisation Mobile App
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            E-Donor
+                                            Card App
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Organ
+                                            Donation App
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Brain
+                                            Death Certification App
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 column">
+                            <div class="widget">
+                                <div class="widget-title">
+                                    <h4>Activities</h4>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#">Chennai</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Hyderabad</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Delhi</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Nagpur</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Chandigarh</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Jaipur</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Bangalore</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kerala</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="widget">
+                                <div class="widget-title">
+                                    <h4>Public Education</h4>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#">News</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Brochures</a>
+                                    </li>
+                                    <li><a href="#">Survey</a></li>
+                                    <li>
+                                        <a href="#">
+                                            Brain
+                                            Death Quotations
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Free Downloads</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 column">
+                            <div class="widget">
+                                <div class="widget-title">
+                                    <h4>Physician Education</h4>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#">News</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Transplant
+                                            Newsletter
+                                        </a>
+                                    </li>
+                                    <li><a href="#">Slides</a></li>
+                                    <li><a href="#">Publication</a></li>
+                                    <li>
+                                        <a href="#">
+                                            Stats-
+                                            Organ Donation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            TN
+                                            GO'S
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Andhra
+                                            Pradesh Order
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="widget">
+                                <div class="widget-title">
+                                    <h4>Transplant Coordinator Course</h4>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Course Details</a></li>
+                                    <li>
+                                        <a href="#">
+                                            One
+                                            Week Course
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            One
+                                            Month Course
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            One
+                                            Year E-Learning Course
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Testimonials</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="newsletter-signup d-flex align-items-center justify-content-between flex-wrap">
+                            <h4 class="footer-bar-title  footer-title-mobile">
+                                <a name="subs"></a>Sign Up
+                                <span>Newsletter</span>
+                            </h4>
+                            <form name="formnew" method="post" class="d-flex align-items-center justify-content-between"
+                                  class="form-horizontal">
+                                <input type="text" name="subsemail" placeholder="Enter Your Email">
+                                <button class="btn btn-md btn-danger">SUBSCRIBE</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6">
+                        <div class="footer-social-btns d-flex align-items-center justify-content-lg-end flex-wrap">
+                            <h4 class="footer-bar-title footer-title-mobile mr-2">Stay In <span>Touch</span></h4>
+                            <div class="social d-flex align-items-center">
+                                <a itemprop="url" target="_blank" href="#" title=""><i class="fab fa-twitter"></i></a>
+                                <a itemprop="url" target="_blank" href="#" title=""><i class="fab fa-facebook-f"></i></a>
+                                <a itemprop="url" target="_blank" href="#" title=""><i class="fab fa-youtube"></i></a>
+                                <a itemprop="url" target="_blank" href="#" title=""><i class="fab fa-instagram"></i></a>
+                                <a itemprop="url" target="_blank" href="#" title=""><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 justify-content-end">
+                        <div class="bottom-links mob-center">
+                            <a href="#">Unsubscribe</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms and conditions</a>
+                            <a href="#">POSH Policy</a>
+                            <a href="#">
+                                Organisation
+                                Registration Documents
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 column" style="padding-top:10px;">
+                        <p>
+                            © Copyright MOHAN Foundation 2021, All Rights Reserved. Hosting and Technology support for
+                            the past 20 years for <a href="#" style="color:#9db099;">www.mohanfoundation.org</a> website is
+                            being provided by <a href="#" style="color:#9db099;" target="_blank">www.medindia.net</a> - a
+                            large health website.
+                        </p>
+                        <p style="padding-top: 10px;">
+                            <strong>Disclaimer: </strong>The content of the site is for
+                            information purpose only. Always seek the advice of your physician or other qualified
+                            healthcare professional regarding any questions you may have about a medical condition.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>    
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
