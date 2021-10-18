@@ -1,71 +1,496 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+﻿* {
+    font-family: "Open Sans", sans-serif;
 }
 
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
+.header_navTop {
+    background-color: #ebf0f0;
+    padding: 10px 0;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    .header_navTop ul li i {
+        padding: 0 10px;
+    }
+
+.header_mediaIcon {
+    color: #22235b;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.header_topMenu {
+    width: 240px;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    .header_topMenu li a {
+        color: #333;
+        text-decoration: none;
+        padding: 0 10px;
+    }
+
+        .header_topMenu li a:hover, .header_topMenu li a:focus {
+            text-decoration: none;
+            background-color: #2ca0ca;
+            color: #fff;
+        }
+
+.user-infoWrapper ul li {
+    padding: 0 10px;
 }
 
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+    .user-infoWrapper ul li a {
+        font-size: 0.8125rem;
+        font-weight: bold;
+        color: #22235b;
+        text-transform: uppercase;
+    }
+
+.organ_helpline p {
+    color: #3b5997;
+    font-size: 14px;
 }
 
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+.phone_no {
+    color: #3b5997;
+    font-size: 24px;
 }
 
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+.header_mainNav {
+    background: #1f4494;
+    padding: 10px 0;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
+    .header_mainNav ul li {
+        padding: 0 10px;
+    }
+
+        .header_mainNav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+    /* .header_mainNav .open .dropdown-menu {
+    position: relative;
+} */
+
+    .header_mainNav .open:hover .dropdown-menu {
+        display: block;
+    }
+
+.navbar-light .navbar-toggler {
+    border: 0;
 }
 
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../images/square.png);
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
 }
+
+.meg-nav-divider1 {
+    border-color: #e1e3e2;
+    border-image: none;
+    border-radius: 0;
+    height: auto;
+    padding: 20px;
+    width: 650px;
+    float: left;
+    height: 360px;
+}
+
+.meg-nav-divider2 {
+    width: 650px;
+    height: auto;
+    margin-left: -50px;
+    padding: 20px 25px;
+    border-radius: 0;
+    border-color: #e1e3e2;
+    border-image: none;
+    height: 340px;
+}
+
+.meg-nav-divider3 {
+    width: 750px;
+    height: 314px;
+    margin-left: -50px;
+    padding: 15px 25px;
+    border-radius: 0;
+    height: 340px;
+    border-image: none;
+}
+
+.meg-nav-divider4 {
+    width: 600px;
+    height: 270px;
+    margin-left: -50px;
+    padding: 15px 25px;
+    border-image: none;
+    height: 340px;
+}
+
+.meg-nav-divider5 {
+    width: 650px;
+    height: 270px;
+    margin-left: -250px;
+    padding: 15px 25px;
+    height: 340px;
+    border-image: none;
+}
+
+.meg-nav-divider6 {
+    width: 650px;
+    height: 340px;
+    margin-left: -275px;
+    padding: 15px 25px;
+    height: 340px;
+    border-image: none;
+}
+
+.meg-nav-divider7 {
+    width: 350px;
+    height: 310px;
+    margin-left: -150px;
+    height: 340px;
+    padding: 15px 25px;
+    border-image: none;
+}
+
+.meg-nav-divider-col ul li a {
+    color: #333;
+    font-size: 15px;
+}
+
+    .meg-nav-divider-col ul li a:hover {
+        color: #1f4494;
+    }
+
+.menu-icon {
+    margin-right: 5px;
+}
+
+.site_Primaryslider {
+    width: 100%;
+}
+
+    .site_Primaryslider img {
+        width: 100%;
+    }
+
+.main_content .carousel .content-wrapper {
+    margin-bottom: 8px;
+}
+
+    .main_content .carousel .content-wrapper img {
+        width: 270px;
+        height: 150px;
+    }
+
+    .main_content .carousel .content-wrapper .span-color {
+        color: #838ca5;
+        font-size: 14px;
+    }
+
+    .main_content .carousel .content-wrapper h5 {
+        font-size: 16px;
+    }
+
+.related-text {
+    margin: 0;
+    font-size: 10px;
+    font-weight: 600;
+    color: #1f4494;
+}
+
+.donar-name {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.donar-story {
+    color: #999;
+    font-size: 14px;
+}
+
+.img-wrapper img {
+    width: 175px;
+    height: 175px;
+}
+
+.transplant-wrapper h4 {
+    font-size: 18px;
+    color: #337ab7;
+}
+
+.transplant-centers {
+    border-bottom: 1px solid #e2e6ed;
+}
+
+    .transplant-centers li {
+        padding: 0 10px;
+    }
+
+.transplant-scroll::-webkit-scrollbar {
+    width: 10px;
+}
+
+.transplant-scroll::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 20px;
+}
+
+.transplant-scroll::-webkit-scrollbar-track {
+    background: #ddd;
+    border-radius: 20px;
+}
+
+.figure-wrapper h5 {
+    font-size: 14px;
+}
+
+.bar {
+    border: 1px solid #38b1cc;
+    background-color: #38b1cc;
+    border-radius: 3px;
+    margin-bottom: 8px;
+}
+
+.bar-inner {
+    background-color: #3099b0;
+    border: 1px solid #3099b0;
+    border-radius: 3px;
+    float: left;
+    margin: 12px 5px;
+    padding: 10px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.new-conent_wrapper {
+    height: 100%;
+}
+
+    .new-conent_wrapper h3 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .new-conent_wrapper .media-body p a, .new-conent_wrapper h5 a {
+        color: #337ab7;
+        font-size: 14px;
+    }
+
+.meadis-main-wrapper {
+    height: calc(100% - 60px);
+}
+
+.rhs-pad img {
+    width: 100%;
+}
+
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+    background-color: #214a8c;
+    margin-top: 3rem;
+}
+
+.table-responsive {
+    color: #fff;
+    border: 1px solid #e2e6ed;
+    padding: 10px;
+}
+
+.footer h4 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+}
+
+    .footer h4::after {
+        content: "";
+        position: absolute;
+        background: #ffc10d;
+        width: 2.5rem;
+        height: 0.1875rem;
+        left: 0;
+        bottom: -8px;
+    }
+
+.contact-widget h5 {
+    float: left;
+    width: 100%;
+    color: #ffffff;
+    opacity: 0.5;
+    font-family: inherit;
+    font-size: 20px;
+    margin: 0 0 30px;
+    cursor: pointer;
+}
+
+    .contact-widget h5:hover {
+        opacity: 1;
+    }
+
+.contact-widget ul, .widget ul {
+    list-style: none;
+    padding-left: 6px;
+}
+
+    .contact-widget ul li {
+        color: #fff;
+        opacity: 0.5;
+        padding: 8px 0;
+        cursor: pointer;
+    }
+
+        .contact-widget ul li:hover {
+            opacity: 1;
+        }
+
+    .widget ul li {
+        padding: 8px 0;
+    }
+
+        .widget ul li a {
+            color: #fff;
+            opacity: 0.5;
+        }
+
+            .widget ul li a:hover {
+                opacity: 1;
+            }
+
+.newsletter-signup form {
+    display: inline-block;
+    vertical-align: middle;
+    width: 64%;
+}
+
+    .newsletter-signup form input {
+        height: 40px;
+        display: table-cell;
+        width: 66%;
+        margin-right: 2%;
+        font-size: 12px;
+        color: #525151;
+        padding: 10px 20px;
+        border: 0;
+    }
+
+.footer-bar {
+    background-color: #214581;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.social a {
+    width: 44px;
+    height: 44px;
+    margin-right: 11px;
+    line-height: 44px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0% 0%;
+    color: #fff;
+}
+
+    .social a i {
+        line-height: 42px;
+        width: 100%;
+    }
+
+.mob-center {
+    text-align: right;
+}
+
+.bottom-links a {
+    border-right: 1px solid #fff;
+    color: #cbcbcb;
+    display: inline-flex;
+    font-size: 13px;
+    line-height: 9px;
+    padding: 0 15px;
+    font-weight: 300;
+}
+
+.bottom-bar p {
+    color: #afafaf;
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+    text-align: left;
+}
+
+.other-info img {
+    object-fit: contain;
+}
+
+.mob-view-header-icon li {
+    padding: 0 10px;
+}
+
+@media (max-width: 767px) {
+    .mob-view {
+        display: none;
+    }
+
+    .mob-view-header {
+        display: block;
+    }
+}
+
+@media (max-width: 991px) {
+    .mob-view {
+        display: none !important;
+    }
+
+    .mob-view-header {
+        display: block !important;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .navbar-nav .dropdown-menu {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .header_mainNav ul li {
+        padding: 10px 0;
+    }
+
+    .content-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin-bottom: 12px;
+    }
+
+    .pledge-btn {
+        margin-bottom: 10px;
+    }
+
+    h3, h4 {
+        font-size: 18px;
+    }
+
+    .footer-title-mobile {
+        margin-bottom: 24px;
+        margin-top: 10px;
+    }
+
+    .newsletter-signup form {
+        width: 100%;
+    }
+}
+
+@media(max-width: 1440px) {
+    .mob-view {
+        display: block;
+    }
+
+    .mob-view-header {
+        display: none;
+    }
 }
